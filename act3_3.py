@@ -58,6 +58,9 @@ def search_index(id):
         if stu[i].stu_id == id :
             return i
 #dict2.update(dict1)
+inp1 = input('Reveal Menter : ')
+inp2 = input('Are these two related \nFirst : ')
+inp3 = input('Second : ')
 
-print(stu[0].checkMenter())
-print(stu[0].isRelated('66000000'))
+print(stu[search_index(inp1)].checkMenter())
+print(stu[search_index(inp2)].isRelated(inp3))
